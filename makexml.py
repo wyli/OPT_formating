@@ -1,6 +1,6 @@
 import xml.etree.cElementTree as ET
 
-with open('temp') as f:
+with open('checklist') as f:
 
     currentID = ''
     filecount = 0
@@ -20,7 +20,6 @@ with open('temp') as f:
             image_type.text = entry[1] # Cancer/HGD/LGD
             currentID = entry[2][0:3] # [0-9]{3} index of polyp
             image_index.text = currentID 
-            print currentID
 
         itemcount = itemcount + 1
         image_part = ET.SubElement(root, "part")
@@ -34,5 +33,5 @@ with open('temp') as f:
         filename = 'desc/' + image_index.text + '.xml'
         tree.write(filename)
 
-print filecount
-print itemcount
+print 'total images: ' + str(filecount)
+print 'total blocks: ' + str(itemcount)
