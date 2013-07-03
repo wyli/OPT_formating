@@ -4,7 +4,7 @@ Using matlab with NIFTI toolbox, converting files into consistent formats.
 `[0-9]{3}.img` and `[0-9]{3].hdr`.
 
 2. mv images in the the image folder, make sure names are the same: `Stack.img` and `Stack.hdr`
-(related code: `renameFiles.sh`).
+(related code: `rename_image.sh`).
 
 3. generate xml files using `makexml.py`.
 
