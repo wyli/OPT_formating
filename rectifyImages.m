@@ -48,50 +48,50 @@ fprintf('starting scale/roate/moving...\n');
 rotateMat = [0 0 1 0; 0 1 0 0; -1 0 0 0; 0 0 0 1];
 
 % % update xml files
-for i = 1:size(xml_filenames, 1)
-    rec = VOCreadxml([xml_set, xml_filenames(i).name]);
-    desc = rec.annotation;
-    name = desc.index;
-    for p = 1:size(rec.annotation.part, 2)
-        try
-            part = rec.annotation.part{p};
-        catch e
-            part = rec.annotation.part;
-        end
-
-        fprintf('%s checking %s%s\n', datestr(now), name, part);
-
-        segFile = sprintf(annotation_str,...
-            desc.dataset, desc.type, name, part);
-        segFile = load_nii(segFile);
-        segImg = segFile.img;
-        try
-            scanForPositiveSampleLocations(segImg, [15, 15, 15], [5, 5, 5]);
-            try
-                rec.annotation.needRotate{p} = 0;
-            catch e
-                rec.annotation.needRotate = 0;
-            end
-            VOCwritexml(rec, [xml_set, xml_filenames(i).name]);
-            clear segImg;
-        catch e
-            if strcmp(e.identifier, 'OPT:nolocation')
-                try
-                    rec.annotation.needRotate{p} = 1;
-                catch e
-                    rec.annotation.needRotate = 1;
-                end
-                VOCwritexml(rec, [xml_set, xml_filenames(i).name]);
-            end
-        end
-    end
-end
+%for i = 1:size(xml_filenames, 1)
+%    rec = VOCreadxml([xml_set, xml_filenames(i).name]);
+%    desc = rec.annotation;
+%    name = desc.index;
+%    for p = 1:size(rec.annotation.part, 2)
+%        try
+%            part = rec.annotation.part{p};
+%        catch e
+%            part = rec.annotation.part;
+%        end
+%
+%        fprintf('%s checking %s%s\n', datestr(now), name, part);
+%
+%        segFile = sprintf(annotation_str,...
+%            desc.dataset, desc.type, name, part);
+%        segFile = load_nii(segFile);
+%        segImg = segFile.img;
+%        try
+%            scanForPositiveSampleLocations(segImg, [15, 15, 15], [5, 5, 5]);
+%            try
+%                rec.annotation.needRotate{p} = 0;
+%            catch e
+%                rec.annotation.needRotate = 0;
+%            end
+%            VOCwritexml(rec, [xml_set, xml_filenames(i).name]);
+%            clear segImg;
+%        catch e
+%            if strcmp(e.identifier, 'OPT:nolocation')
+%                try
+%                    rec.annotation.needRotate{p} = 1;
+%                catch e
+%                    rec.annotation.needRotate = 1;
+%                end
+%                VOCwritexml(rec, [xml_set, xml_filenames(i).name]);
+%            end
+%        end
+%    end
+%end
 
 
 % scale & rotate
-savingSeg = 'F:/OPT_dataset/Annotation/%s%s';
-savingOri = 'F:/OPT_dataset/Image/%s%s';
-for i = 1:size(xml_filenames, 1)
+savingSeg = 'F:/OPT_dataset1/Annotation/%s%s';
+savingOri = 'F:/OPT_dataset1/Image/%s%s';
+for i = size(xml_filenames, 1):-1:1
     rec = VOCreadxml([xml_set, xml_filenames(i).name]);
     desc = rec.annotation;
     name = rec.annotation.index;
@@ -119,12 +119,14 @@ for i = 1:size(xml_filenames, 1)
         try
             if rec.annotation.needRotate{p} == '1'
                 fprintf('%s rotating %s%s\n', datestr(now), name, part);
-                segImg = affine(segImg, rotateMat);
+                %segImg = affine(segImg, rotateMat);
+                segImg = affineImage(segImg);
             end
         catch e
             if rec.annotation.needRotate == '1'
                 fprintf('%s rotating %s%s\n', datestr(now), name, part);
-                segImg = affine(segImg, rotateMat);
+                %segImg = affine(segImg, rotateMat);
+                segImg = affineImage(segImg);
             end
         end
         % to binary image
@@ -152,12 +154,14 @@ for i = 1:size(xml_filenames, 1)
         try
             if rec.annotation.needRotate{p} == '1'
                 fprintf('%s rotating %s%s\n', datestr(now), name, part);
-                oriImg = affine(oriImg, rotateMat);
+                %oriImg = affine(oriImg, rotateMat);
+                oriImg = affineImage(oriImg);
             end
         catch e
             if rec.annotation.needRotate == '1'
                 fprintf('%s rotating %s%s\n', datestr(now), name, part);
-                oriImg = affine(oriImg, rotateMat);
+                %oriImg = affine(oriImg, rotateMat);
+                oriImg = affineImage(oriImg);
             end
         end
         oriImg = uint8(oriImg);
@@ -168,7 +172,7 @@ for i = 1:size(xml_filenames, 1)
     end
 end
 
-% % update xml files
+%% update xml files
 for i = 1:size(xml_filenames, 1)
     rec = VOCreadxml([xml_set, xml_filenames(i).name]);
     name = rec.annnotation.index;
