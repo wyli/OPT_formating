@@ -22,11 +22,13 @@ for i = 1:size(xml_filenames, 1)
     desc = rec.annotation;
     name = rec.annotation.index;
     for p = 1:size(rec.annotation.part,2)
+
         if size(rec.annotation.part,2) == 1
-            part = rec.annotation.part{p};
-        else
             part = rec.annotation.part;
+        else
+            part = rec.annotation.part{p};
         end
+
         % load segmentation
         segFile = sprintf(annotation_str,...
             desc.dataset, desc.type, name, part);
@@ -37,33 +39,23 @@ for i = 1:size(xml_filenames, 1)
         fprintf('%s scaling %s%s\n', datestr(now), name, part);
         tempImg = zeros(size(segImg).*2);
         for n = 1:size(segImg, 3)
-            tempImg(:,:,n) = imresize(segImg(:,:,n), 2);
-            tempImg(:,:,n) = im2bw(segImg(:,:,n), 0.5);
+            tempImg(:,:,n) = uint8(im2bw(imresize(segImg(:,:,n), 2), 0.5));
         end
-        segImg = uint8(tempImg);
+        segImg = tempImg;
         clear tempImg;
+
         % rotate segmentation if needed
         if size(rec.annotation.part,2) == 1
             segImg = affineImage(segImg, str2num(rec.annotation.needRotate));
         else
             segImg = affineImage(segImg, str2num(rec.annotation.needRotate{p}));
         end
-        %% to binary image
-        %tempImg = zeros(size(segImg));
-        %for n = 1:size(tempImg, 3)
-        %    tempImg(:,:,n) = im2bw(segImg(:,:,n), 0.5);
-        %end
-        %segImg = tempImg;
-        %clear tempImg;
-        %segImg = uint8(segImg); %% caution!!! avoid large size
-        % save segmentation to disk
         savingSegFile = sprintf(savingSeg, name, part);
         save(savingSegFile, 'segImg');
         clear segImg;
 
 
         % load original image
-%image_str = 'U:/OPTannotation/%s/Images/%s/%s/%s%s';
         oriFile = sprintf(image_str,...
             desc.dataset, desc.type, name, name, part);
         oriFile = load_nii([oriFile '/Stack']);
