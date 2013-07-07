@@ -1,6 +1,6 @@
 function rectifyImages(xml_set)
 addpath(genpath('U:/archives/NIFTI_20110921'));
-%%% touch all images (check existence)
+
 % xml indexes
 if isempty(xml_set)
     xml_set = 'F:/OPT_dataset/Description/';
@@ -12,8 +12,6 @@ fprintf('%d xml files\n', length(xml_filenames));
 annotation_str = 'U:/OPTannotation/%s/Annotated/%s/%s%s';
 % ../dataset/Images/type/index/index_block/
 image_str = 'U:/OPTannotation/%s/Images/%s/%s/%s%s';
-
-rotateMat = [0 0 1 0; 0 1 0 0; -1 0 0 0; 0 0 0 1];
 
 % scale & rotate
 savingSeg = 'C:/OPT_dataset/Annotation/%s%s';
@@ -37,36 +35,32 @@ for i = 1:size(xml_filenames, 1)
         clear segFile;
         % scale segmentation
         fprintf('%s scaling %s%s\n', datestr(now), name, part);
-        tempImg = zeros(size(segImg,1)*2, size(segImg,2)*2, size(segImg,3));
+        tempImg = zeros(size(segImg).*2);
         for n = 1:size(segImg, 3)
             tempImg(:,:,n) = imresize(segImg(:,:,n), 2);
+            tempImg(:,:,n) = im2bw(segImg(:,:,n), 0.5);
         end
-        segImg = tempImg;
+        segImg = uint8(tempImg);
         clear tempImg;
         % rotate segmentation if needed
         if size(rec.annotation.part,2) == 1
-            if rec.annotation.needRotate{p} == '1'
-                fprintf('%s rotating %s%s\n', datestr(now), name, part);
-                segImg = affineImage(segImg);
-            end
+            segImg = affineImage(segImg, str2num(rec.annotation.needRotate));
         else
-            if rec.annotation.needRotate == '1'
-                fprintf('%s rotating %s%s\n', datestr(now), name, part);
-                segImg = affineImage(segImg);
-            end
+            segImg = affineImage(segImg, str2num(rec.annotation.needRotate{p}));
         end
-        % to binary image
-        tempImg = zeros(size(segImg));
-        for n = 1:size(tempImg, 3)
-            tempImg(:,:,n) = im2bw(segImg(:,:,n), 0.5);
-        end
-        segImg = tempImg;
-        clear tempImg;
-        segImg = uint8(segImg); %% caution!!! avoid large size
+        %% to binary image
+        %tempImg = zeros(size(segImg));
+        %for n = 1:size(tempImg, 3)
+        %    tempImg(:,:,n) = im2bw(segImg(:,:,n), 0.5);
+        %end
+        %segImg = tempImg;
+        %clear tempImg;
+        %segImg = uint8(segImg); %% caution!!! avoid large size
         % save segmentation to disk
         savingSegFile = sprintf(savingSeg, name, part);
         save(savingSegFile, 'segImg');
         clear segImg;
+
 
         % load original image
 %image_str = 'U:/OPTannotation/%s/Images/%s/%s/%s%s';
@@ -76,21 +70,13 @@ for i = 1:size(xml_filenames, 1)
         oriImg = oriFile.img;
         clear oriFile;
 
+        oriImg = uint8(oriImg);
         % rotate image if needed
         if size(rec.annotation.part,2) == 1
-            if rec.annotation.needRotate{p} == '1'
-                fprintf('%s rotating %s%s\n', datestr(now), name, part);
-                %oriImg = affine(oriImg, rotateMat);
-                oriImg = affineImage(oriImg);
-            end
+            oriImg = affineImage(oriImg, str2num(rec.annotation.needRotate));
         else
-            if rec.annotation.needRotate == '1'
-                fprintf('%s rotating %s%s\n', datestr(now), name, part);
-                %oriImg = affine(oriImg, rotateMat);
-                oriImg = affineImage(oriImg);
-            end
+            oriImg = affineImage(oriImg, str2num(rec.annotation.needRotate{p}));
         end
-        oriImg = uint8(oriImg);
         % save image to disk
         savingOriFile = sprintf(savingOri, name, part);
         save(savingOriFile, 'oriImg');

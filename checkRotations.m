@@ -30,25 +30,22 @@ for i = 1:size(xml_filenames, 1)
             desc.dataset, desc.type, name, part);
         segFile = load_nii(segFile);
         segFile.img = segFile.img;
-        loc = findPatch(segFile.img, [5, 5, 5], [5, 5, 5]);
+        flag = 0;
+        loc = findPatch(...
+            affineImage(segFile.img, flag), [5, 5, 5], [5, 5, 5]);
 
-        if isempty(loc)
+        while flag < 3 && isempty(loc)
 
+            flag = flag + 1;
+            loc = findPatch(...
+                affineImage(segFile.img, flag), [5, 5, 5], [5, 5, 5]);
             if size(rec.annotation.part, 2) == 1
-                rec.annotation.needRotate = 1;
+                rec.annotation.needRotate = flag;
             else
-                rec.annotation.needRotate{p} = 1;
+                rec.annotation.needRotate{p} = flag;
             end
-            VOCwritexml(rec, [xml_set, xml_filenames(i).name]);
-        else
-
-            if size(rec.annotation.part, 2) == 1
-                rec.annotation.needRotate = 0;
-            else
-                rec.annotation.needRotate{p} = 0;
-            end
-            VOCwritexml(rec, [xml_set, xml_filenames(i).name]);
         end
+        VOCwritexml(rec, [xml_set, xml_filenames(i).name]);
         clear segFile;
     end
 end
