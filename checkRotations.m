@@ -26,7 +26,6 @@ for i = 1:size(xml_filenames, 1)
         end
 
         fprintf('%s checking %s%s\n', datestr(now), name, part);
-
         segFile = sprintf(annotation_str,...
             desc.dataset, desc.type, name, part);
         segFile = load_nii(segFile);
