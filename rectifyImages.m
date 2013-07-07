@@ -99,30 +99,3 @@ for i = 1:size(xml_filenames, 1)
         clear oriImg;
     end
 end
-
-%% update xml files
-for i = 1:size(xml_filenames, 1)
-    rec = VOCreadxml([xml_set, xml_filenames(i).name]);
-    name = rec.annnotation.index;
-    for p = 1:size(rec.annotation.part, 2)
-        try
-            part = rec.annotation.part{p};
-        catch e
-            part = rec.annotation.part;
-        end
-
-        fprintf('%s re-checking %s%s\n', datestr(now), name, part);
-        segFile = sprintf(savingSeg, name, part);
-        segFile = load_nii(segFile);
-        segImg = segFile.img;
-        try
-            scanForPositiveSampleLocations(segImg, [15, 15, 15], [5, 5, 5]);
-            clear segImg;
-        catch e
-            fprintf('error: %s\n', e.identifier);
-            if strcmp(e.identifier, 'OPT:nolocation')
-                fprintf('error file: %s', segFile);
-            end
-        end
-    end
-end
