@@ -19,10 +19,10 @@ for i = 1:size(xml_filenames, 1)
     desc = rec.annotation;
     name = desc.index;
     for p = 1:size(desc.part, 2)
-        try
-            part = desc.part{p};
-        catch e
+        if size(desc.part, 2) == 1
             part = desc.part;
+        else
+            part = desc.part{p};
         end
 
         annotation_name = sprintf(annotation_str,...
