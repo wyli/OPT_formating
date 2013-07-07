@@ -18,9 +18,9 @@ for i = 1:size(xml_filenames, 1)
     rec = VOCreadxml([xml_set, xml_filenames(i).name]);
     name = rec.annnotation.index;
     for p = 1:size(rec.annotation.part, 2)
-        try
+        if size(rec.annotation.part, 2) == 1
             part = rec.annotation.part{p};
-        catch e
+        else
             part = rec.annotation.part;
         end
 

@@ -24,9 +24,9 @@ for i = 1:size(xml_filenames, 1)
     desc = rec.annotation;
     name = rec.annotation.index;
     for p = 1:size(rec.annotation.part,2)
-        try
+        if size(rec.annotation.part,2) == 1
             part = rec.annotation.part{p};
-        catch e
+        else
             part = rec.annotation.part;
         end
         % load segmentation
@@ -44,16 +44,14 @@ for i = 1:size(xml_filenames, 1)
         segImg = tempImg;
         clear tempImg;
         % rotate segmentation if needed
-        try
+        if size(rec.annotation.part,2) == 1
             if rec.annotation.needRotate{p} == '1'
                 fprintf('%s rotating %s%s\n', datestr(now), name, part);
-                %segImg = affine(segImg, rotateMat);
                 segImg = affineImage(segImg);
             end
-        catch e
+        else
             if rec.annotation.needRotate == '1'
                 fprintf('%s rotating %s%s\n', datestr(now), name, part);
-                %segImg = affine(segImg, rotateMat);
                 segImg = affineImage(segImg);
             end
         end
@@ -79,13 +77,13 @@ for i = 1:size(xml_filenames, 1)
         clear oriFile;
 
         % rotate image if needed
-        try
+        if size(rec.annotation.part,2) == 1
             if rec.annotation.needRotate{p} == '1'
                 fprintf('%s rotating %s%s\n', datestr(now), name, part);
                 %oriImg = affine(oriImg, rotateMat);
                 oriImg = affineImage(oriImg);
             end
-        catch e
+        else
             if rec.annotation.needRotate == '1'
                 fprintf('%s rotating %s%s\n', datestr(now), name, part);
                 %oriImg = affine(oriImg, rotateMat);

@@ -19,10 +19,10 @@ for i = 1:size(xml_filenames, 1)
     desc = rec.annotation;
     name = desc.index;
     for p = 1:size(rec.annotation.part, 2)
-        try
-            part = rec.annotation.part{p};
-        catch e
+        if size(rec.annotation.part, 2) == 1
             part = rec.annotation.part;
+        else
+            part = rec.annotation.part{p};
         end
 
         fprintf('%s checking %s%s\n', datestr(now), name, part);
@@ -34,18 +34,18 @@ for i = 1:size(xml_filenames, 1)
 
         if isempty(loc)
 
-            try
-                rec.annotation.needRotate{p} = 1;
-            catch e
+            if size(rec.annotation.part, 2) == 1
                 rec.annotation.needRotate = 1;
+            else
+                rec.annotation.needRotate{p} = 1;
             end
             VOCwritexml(rec, [xml_set, xml_filenames(i).name]);
         else
 
-            try
-                rec.annotation.needRotate{p} = 0;
-            catch e
+            if size(rec.annotation.part, 2) == 1
                 rec.annotation.needRotate = 0;
+            else
+                rec.annotation.needRotate{p} = 0;
             end
             VOCwritexml(rec, [xml_set, xml_filenames(i).name]);
         end
