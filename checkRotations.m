@@ -29,25 +29,26 @@ for i = 1:size(xml_filenames, 1)
         segFile = sprintf(annotation_str,...
             desc.dataset, desc.type, name, part);
         segFile = load_nii(segFile);
-        segImg = segFile.img;
-        try
-            scanForPositiveSampleLocations(segImg, [15, 15, 15], [5, 5, 5]);
+        segFile.img = segFile.img;
+        loc = findPatch(segFile.img, [15, 15, 15], [5, 5, 5]);
+
+        if isempty(loc)
+
+            try
+                rec.annotation.needRotate{p} = 1;
+            catch e
+                rec.annotation.needRotate = 1;
+            end
+            VOCwritexml(rec, [xml_set, xml_filenames(i).name]);
+        else
+
             try
                 rec.annotation.needRotate{p} = 0;
             catch e
                 rec.annotation.needRotate = 0;
             end
             VOCwritexml(rec, [xml_set, xml_filenames(i).name]);
-            clear segImg;
-        catch e
-            if strcmp(e.identifier, 'OPT:nolocation')
-                try
-                    rec.annotation.needRotate{p} = 1;
-                catch e
-                    rec.annotation.needRotate = 1;
-                end
-                VOCwritexml(rec, [xml_set, xml_filenames(i).name]);
-            end
         end
+        clear segFile;
     end
 end
