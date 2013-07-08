@@ -22,26 +22,22 @@ for i = 1:size(xml_filenames, 1)
         else
             part = rec.annotation.part{p};
         end
+        fprintf('%s%s: ', name, part);
         
         segFile = sprintf(segString, name, part);
         imgFile = sprintf(imgString, name, part);
         
         x = load(segFile);
         y = load(imgFile);
-        size(x.segImg)
-        size(y.oriImg)
         assert(isequal(size(x.segImg), size(y.oriImg)));
-        %if size(x.segImg) ~= size(y.oriImg)
-        %    fprintf('size not match: %s%s\n',  name, part);
-        %end
+        assert(sum(sum(sum(x.segImg))) > 0);
+        assert(sum(sum(sum(y.oriImg))) > 0);
+        fprintf(' size pass,');
         clear y;
         
         loc = findPatch(x.segImg, [5 5 5], [5 5 5]);
         assert(~isempty(loc));
-        %if isempty(loc)
-        %    fprintf('annotation not continuous: %s', name, part);
-        %end
         clear x;
-        fprintf('%s%s pass\n', name, part);
+        fprintf(' continuity pass.\n');
     end
 end

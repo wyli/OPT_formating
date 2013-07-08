@@ -41,7 +41,8 @@ for i = 1:size(xml_filenames, 1)
             tempImg = uint8(zeros(...
                 size(segImg, 1)*2, size(segImg, 2)*2, size(segImg, 3)));
             for n = 1:size(segImg, 3)
-                tempImg(:,:,n) = uint8(im2bw(imresize(segImg(:,:,n), 2), 0.5));
+                %tempImg(:,:,n) = imresize(segImg(:,:,n), 2);
+                tempImg(:,:,n) = uint8(imresize(segImg(:,:,n), 2) > 0.5);
             end
             segImg = uint8(tempImg);
             clear tempImg;
