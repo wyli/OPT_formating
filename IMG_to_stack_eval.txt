@@ -1,0 +1,100 @@
+// This macro assumes that the files are named in some kind of logical order
+// the images are placed in a first in / first out stack with image #1
+// on top followed by image #2 and so on
+//
+// gma - 28 mar 05
+//
+// caution: windows file seperator "\", unix "/;
+
+macro "Batch Convert JPGs to Stack" { datasetWrapper(); }
+
+function datasetWrapper() {
+    requires("1.33s");
+    dataset = newArray(
+         "F:\\OPT_original\\OPTdataI\\Images\\Cancers\\",
+         "F:\\OPT_original\\OPTdataI\\Images\\LGD\\",
+         "F:\\OPT_original\\OPTdataII\\Images\\Cancers\\",
+         "F:\\OPT_original\\OPTdataII\\Images\\LGD\\",
+         "F:\\OPT_original\\OPTdataIII\\Images\\Cancers\\",
+         "F:\\OPT_original\\OPTdataIII\\Images\\LGD\\",
+         "F:\\OPT_original\\OPTdataIV\\Images\\Cancers\\",
+         "F:\\OPT_original\\OPTdataIV\\Images\\HGD\\"
+    );
+    for (i = 0; i < dataset.length; i++) {
+        pathWrapper(dataset[i]);
+    }
+}
+
+function pathWrapper(dataset) {
+
+    dir = getFileList(dataset);
+    for (i = 0; i < dir.length; i++) {
+
+        subdir = getFileList(dataset + dir[i]);
+        for (j = 0; j < subdir.length; j++) {
+
+            imagePath = dataset + dir[i] + subdir[j];
+            imagePath = replace(imagePath, "/", File.separator);
+            print("start converting: " + imagePath);
+            convert(imagePath);
+        }
+    }
+}
+
+function convert(dir1) {
+
+    // dir1: input, dir2: output
+    dir2 = dir1;
+
+    list = filterFiles(dir1, '.*\\.bmp');
+
+    setBatchMode(true);
+    for (i=0; i<list.length; i++) {
+        showProgress(i+1, list.length);
+        name = dir1+list[i];
+        open(name);
+    }
+
+    run("Images to Stack", "name=Stack title=[] use");
+
+    dir2 = dir2 + "Stack.img";
+    print(dir2);
+    
+    // not for Fiji/newer version of ImageJ
+    run("Analyze 7.5...", "save=["+dir2+"]");
+
+    print ('Done! Find the image stack at '+dir2);
+    close();
+}
+
+// wrapper function for quicksort
+function sort(a) {quickSort(a, 0, lengthOf(a)-1);}
+
+// quicksort function
+function quickSort(a, from, to) {
+    i = from; j = to;
+    center = a[(from+to)/2];
+    do {
+        while (i<to && center>a[i]) i++;
+        while (j>from && center<a[j]) j--;
+        if (i<j) {temp=a[i]; a[i]=a[j]; a[j]=temp;}
+        if (i<=j) {i++; j--;}
+    } while(i<=j);
+    if (from<j) quickSort(a, from, j);
+    if (i<to) quickSort(a, i, to);
+}
+
+// find filenames matched by regex
+function filterFiles(dir, regex) {
+    files = getFileList(dir);
+    filtered = newArray();
+    for (i = 0; i < files.length; i++) {
+        if (matches(files[i], regex)) {
+            filtered = Array.concat(filtered, files[i]);
+        } else {
+            print("rejected: " + files[i]);
+        }
+    }
+    print("number of images" + filtered.length);
+    return filtered;
+}
