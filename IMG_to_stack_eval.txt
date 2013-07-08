@@ -95,6 +95,6 @@ function filterFiles(dir, regex) {
             print("rejected: " + files[i]);
         }
     }
-    print("number of images" + filtered.length);
+    print("number of images: " + filtered.length);
     return filtered;
 }

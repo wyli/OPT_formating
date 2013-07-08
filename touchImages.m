@@ -10,9 +10,9 @@ xml_filenames = dir([xml_set, '*.xml']);
 fprintf('%d xml files\n', length(xml_filenames));
 
 % ../dataset/Annotated/type/index_block/
-annotation_str = 'U:/OPTannotation/%s/Annotated/%s/%s%s';
+annotation_str = 'F:/OPT_original/%s/Annotated/%s/%s%s';
 % ../dataset/Images/type/index/index_block/
-image_str = 'U:/OPTannotation/%s/Images/%s/%s/%s%s';
+image_str = 'F:/OPT_original/%s/Images/%s/%s/%s%s';
 
 for i = 1:size(xml_filenames, 1)
     rec = VOCreadxml([xml_set, xml_filenames(i).name]);
