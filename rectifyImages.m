@@ -9,9 +9,9 @@ xml_filenames = dir([xml_set, '*.xml']);
 fprintf('%d xml files\n', length(xml_filenames));
 
 % ../dataset/Annotated/type/index_block/
-annotation_str = 'U:/OPTannotation/%s/Annotated/%s/%s%s';
+annotation_str = 'F:/OPT_original/%s/Annotated/%s/%s%s';
 % ../dataset/Images/type/index/index_block/
-image_str = 'U:/OPTannotation/%s/Images/%s/%s/%s%s';
+image_str = 'F:/OPT_original/%s/Images/%s/%s/%s%s';
 
 % scale & rotate
 savingSeg = 'C:/OPT_dataset/Annotation/%s%s';

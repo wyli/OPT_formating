@@ -28,7 +28,9 @@ for i = 1:size(xml_filenames, 1)
         
         x = load(segFile);
         y = load(imgFile);
-        assert(size(x.segImg) == size(y.oriImg));
+        size(x.segImg)
+        size(y.oriImg)
+        assert(isequal(size(x.segImg), size(y.oriImg)));
         %if size(x.segImg) ~= size(y.oriImg)
         %    fprintf('size not match: %s%s\n',  name, part);
         %end
