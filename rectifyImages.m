@@ -29,51 +29,53 @@ for i = 1:size(xml_filenames, 1)
             part = rec.annotation.part{p};
         end
 
-        % load segmentation
-        segFile = sprintf(annotation_str,...
-            desc.dataset, desc.type, name, part);
-        segFile = load_nii(segFile);
-        segImg = segFile.img;
-        clear segFile;
-        % scale segmentation
-        fprintf('%s scaling %s%s\n', datestr(now), name, part);
-        tempImg = uint8(zeros(size(segImg).*2));
-        for n = 1:size(segImg, 3)
-            tempImg(:,:,n) = uint8(im2bw(imresize(segImg(:,:,n), 2), 0.5));
-        end
-        segImg = uint8(tempImg);
-        clear tempImg;
-
-        % rotate segmentation if needed
-        if size(rec.annotation.part,2) == 1
-            segImg = uint8(...
-                affineImage(segImg, str2num(rec.annotation.needRotate)));
-        else
-            segImg = uint8(...
-                affineImage(segImg, str2num(rec.annotation.needRotate{p})));
-        end
-        savingSegFile = sprintf(savingSeg, name, part);
-        save(savingSegFile, 'segImg');
-        clear segImg;
-
-
-        %% load original image
-        %oriFile = sprintf(image_str,...
-        %    desc.dataset, desc.type, name, name, part);
-        %oriFile = load_nii([oriFile '/Stack']);
-        %oriImg = oriFile.img;
-        %clear oriFile;
-
-        %oriImg = uint8(oriImg);
-        %% rotate image if needed
-        %if size(rec.annotation.part,2) == 1
-        %    oriImg = affineImage(oriImg, str2num(rec.annotation.needRotate));
-        %else
-        %    oriImg = affineImage(oriImg, str2num(rec.annotation.needRotate{p}));
+        %% load segmentation
+        %segFile = sprintf(annotation_str,...
+        %    desc.dataset, desc.type, name, part);
+        %segFile = load_nii(segFile);
+        %segImg = segFile.img;
+        %clear segFile;
+        %% scale segmentation
+        %fprintf('%s scaling %s%s\n', datestr(now), name, part);
+        %tempImg = uint8(zeros(size(segImg).*2));
+        %for n = 1:size(segImg, 3)
+        %    tempImg(:,:,n) = uint8(im2bw(imresize(segImg(:,:,n), 2), 0.5));
         %end
-        %% save image to disk
-        %savingOriFile = sprintf(savingOri, name, part);
-        %save(savingOriFile, 'oriImg');
-        %clear oriImg;
+        %segImg = uint8(tempImg);
+        %clear tempImg;
+
+        %% rotate segmentation if needed
+        %if size(rec.annotation.part,2) == 1
+        %    segImg = uint8(...
+        %        affineImage(segImg, str2num(rec.annotation.needRotate)));
+        %else
+        %    segImg = uint8(...
+        %        affineImage(segImg, str2num(rec.annotation.needRotate{p})));
+        %end
+        %savingSegFile = sprintf(savingSeg, name, part);
+        %save(savingSegFile, 'segImg');
+        %clear segImg;
+
+
+        % load original image
+        oriFile = sprintf(image_str,...
+            desc.dataset, desc.type, name, name, part);
+        oriFile = load_nii([oriFile '/Stack']);
+        oriImg = uint8(oriFile.img);
+        %oriImg = uint8(oriImg);
+        clear oriFile;
+
+        % rotate image if needed
+        if size(rec.annotation.part,2) == 1
+            oriImg = uint8(affineImage(...
+                oriImg, str2num(rec.annotation.needRotate)));
+        else
+            oriImg = uint8(affineImage(...
+                oriImg, str2num(rec.annotation.needRotate{p})));
+        end
+        % save image to disk
+        savingOriFile = sprintf(savingOri, name, part);
+        save(savingOriFile, 'oriImg');
+        clear oriImg;
     end
 end
