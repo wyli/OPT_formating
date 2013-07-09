@@ -3,7 +3,7 @@ addpath(genpath('U:/archives/NIFTI_20110921'));
 
 % xml indexes
 if isempty(xml_set)
-    xml_set = 'F:/OPT_dataset/Description/';
+    xml_set = 'C:/OPT_dataset/Description/';
 end
 xml_filenames = dir([xml_set, '*.xml']);
 fprintf('%d xml files\n', length(xml_filenames));
