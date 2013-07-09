@@ -15,6 +15,8 @@ Using matlab with NIFTI toolbox, converting files into consistent formats.
 ##### note:
 First make sure NIFTI in on matlab path and the file `load_nii_img.m` should be fixed.
 
+start from set of annotation names (subset of image names).
+
 dataset file (Image) path format:
 
 `[DatasetIndex]/Images/[Type]/[ImageIndex]/[ImageBlockIndex]/*.bmp`
@@ -32,5 +34,5 @@ Output structures:
 `[dataset]/Description/[ImageIndex].xml`
 
 ##### !
-447C removed, size not consistent.
-193A removed, (not scaled)
+447C removed (size not consistent)
+193A removed (not scaled)
