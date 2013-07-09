@@ -3,7 +3,7 @@ function touchImages(xml_set)
 % xml indexes
 
 if isempty(xml_set)
-    xml_set = 'F:/OPT_dataset/Description/';
+    xml_set = 'C:/OPT_dataset/Description/';
 end
 
 xml_filenames = dir([xml_set, '*.xml']);
@@ -31,19 +31,15 @@ for i = 1:size(xml_filenames, 1)
             desc.dataset, desc.type, desc.index, desc.index, part);
         if exist([annotation_name '.img'], 'file') ~= 2
             fprintf('Missing: %s.img\n', annotation_name);
-            return
         end
         if exist([annotation_name '.hdr'], 'file') ~= 2
             fprintf('Missing: %s.hdr\n', annotation_name);
-            return
         end
         if exist([image_name '/Stack.img'], 'file') ~= 2
             fprintf('Missing: %s/Stack.img\n', image_name);
-            return
         end
         if exist([image_name '/Stack.hdr'], 'file') ~= 2
             fprintf('Missing: %s/Stack.hdr\n', image_name);
-            return
         end
     end
     fprintf('%s pass\n', xml_filenames(i).name);

@@ -30,7 +30,7 @@ with open('checklist') as f:
         image_rotate.text = '1'
 
         tree = ET.ElementTree(root)
-        filename = 'desc/' + image_index.text + '.xml'
+        filename = 'C:/OPT_dataset/Description/' + image_index.text + '.xml'
         tree.write(filename)
 
 print 'total images: ' + str(filecount)
