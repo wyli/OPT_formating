@@ -48,10 +48,13 @@ function convert(dir1) {
 
     list = filterFiles(dir1, '.*\\.bmp');
 
+    sort(list);
+
     setBatchMode(true);
     for (i=0; i<list.length; i++) {
         showProgress(i+1, list.length);
         name = dir1+list[i];
+        print("Frame: " + name);
         open(name);
     }
 
