@@ -3,7 +3,7 @@ addpath(genpath('U:/archives/NIFTI_20110921'));
 
 % xml indexes
 if isempty(xml_set)
-    xml_set = 'F:/OPT_dataset/Description/';
+    xml_set = 'C:/OPT_dataset/Description/';
 end
 xml_filenames = dir([xml_set, '*.xml']);
 fprintf('%d xml files\n', length(xml_filenames));
@@ -29,15 +29,29 @@ for i = 1:size(xml_filenames, 1)
         
         x = load(segFile);
         y = load(imgFile);
-        assert(isequal(size(x.segImg), size(y.oriImg)));
-        assert(sum(sum(sum(x.segImg))) > 0);
-        assert(sum(sum(sum(y.oriImg))) > 0);
-        fprintf(' size pass,');
+        if isequal(size(x.segImg), size(y.oriImg))
+            fprintf(' size pass,');
+        else
+            fprintf(' size error,');
+        end
+        if sum(sum(sum(x.segImg))) > 0
+            fprintf(' segImg pass,');
+        else
+            fprintf(' seg error,');
+        end
+        if sum(sum(sum(y.oriImg))) > 0
+            fprintf(' oriImg pass,');
+        else
+            fprintf(' oriImg error,');
+        end
         clear y;
         
         loc = findPatch(x.segImg, [5 5 5], [5 5 5]);
-        assert(~isempty(loc));
+        if ~isempty(loc)
+            fprintf(' continuity pass.\n');
+        else
+            fprintf(' continuity error.\n');
+        end
         clear x;
-        fprintf(' continuity pass.\n');
     end
 end

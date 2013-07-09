@@ -30,3 +30,7 @@ Output structures:
 `[dataset]/Annotation/[ImageBlockIndex].mat`
 `[dataset]/Image/[ImageBlockIndex].mat`
 `[dataset]/Description/[ImageIndex].xml`
+
+##### !
+447C removed, size not consistent.
+193A removed, (not scaled)
