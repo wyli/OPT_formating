@@ -1,0 +1,736 @@
+90 xml files
+068.xml pass
+070.xml pass
+073.xml pass
+074.xml pass
+079.xml pass
+081.xml pass
+082.xml pass
+084.xml pass
+090.xml pass
+099.xml pass
+109.xml pass
+113.xml pass
+114.xml pass
+118.xml pass
+119.xml pass
+120.xml pass
+122.xml pass
+123.xml pass
+126.xml pass
+134.xml pass
+139.xml pass
+141.xml pass
+146.xml pass
+148.xml pass
+152.xml pass
+154.xml pass
+156.xml pass
+164.xml pass
+167.xml pass
+171.xml pass
+172.xml pass
+174.xml pass
+175.xml pass
+179.xml pass
+185.xml pass
+186.xml pass
+190.xml pass
+192.xml pass
+193.xml pass
+194.xml pass
+195.xml pass
+196.xml pass
+197.xml pass
+198.xml pass
+215.xml pass
+216.xml pass
+222.xml pass
+248.xml pass
+249.xml pass
+250.xml pass
+252.xml pass
+256.xml pass
+257.xml pass
+259.xml pass
+260.xml pass
+262.xml pass
+263.xml pass
+269.xml pass
+276.xml pass
+278.xml pass
+279.xml pass
+280.xml pass
+284.xml pass
+286.xml pass
+296.xml pass
+308.xml pass
+313.xml pass
+322.xml pass
+327.xml pass
+328.xml pass
+362.xml pass
+366.xml pass
+377.xml pass
+378.xml pass
+380.xml pass
+382.xml pass
+384.xml pass
+444.xml pass
+445.xml pass
+447.xml pass
+448.xml pass
+450.xml pass
+451.xml pass
+453.xml pass
+461.xml pass
+463.xml pass
+466.xml pass
+468.xml pass
+476.xml pass
+477.xml pass
+90 xml files
+09-Jul-2013 20:52:37 checking 068A
+09-Jul-2013 20:52:50 checking 068B
+09-Jul-2013 20:53:03 checking 068C
+09-Jul-2013 20:53:18 checking 070A
+09-Jul-2013 20:53:34 checking 070B
+09-Jul-2013 20:53:49 checking 070C
+09-Jul-2013 20:54:04 checking 073A
+09-Jul-2013 20:54:17 checking 073B
+09-Jul-2013 20:54:30 checking 073C
+09-Jul-2013 20:54:44 checking 074A
+09-Jul-2013 20:55:00 checking 074B
+09-Jul-2013 20:55:15 checking 074C
+09-Jul-2013 20:55:31 checking 079A
+09-Jul-2013 20:55:44 checking 079B
+09-Jul-2013 20:55:57 checking 079C
+09-Jul-2013 20:56:09 checking 081A
+09-Jul-2013 20:56:22 checking 081B
+09-Jul-2013 20:56:37 checking 081C
+09-Jul-2013 20:56:52 checking 082A
+09-Jul-2013 20:57:07 checking 082B
+09-Jul-2013 20:57:22 checking 082C
+09-Jul-2013 20:57:37 checking 084A
+09-Jul-2013 20:57:52 checking 084B
+09-Jul-2013 20:58:07 checking 084C
+09-Jul-2013 20:58:22 checking 090A
+09-Jul-2013 20:58:37 checking 090B
+09-Jul-2013 20:58:52 checking 090C
+09-Jul-2013 20:59:07 checking 099A
+09-Jul-2013 20:59:22 checking 099B
+09-Jul-2013 20:59:37 checking 099C
+09-Jul-2013 20:59:52 checking 109A
+09-Jul-2013 21:00:07 checking 109B
+09-Jul-2013 21:00:22 checking 109C
+09-Jul-2013 21:00:37 checking 113A
+09-Jul-2013 21:00:53 checking 113B
+09-Jul-2013 21:01:08 checking 113C
+09-Jul-2013 21:01:24 checking 114A
+09-Jul-2013 21:01:40 checking 114B
+09-Jul-2013 21:01:57 checking 114C
+09-Jul-2013 21:02:13 checking 118A
+09-Jul-2013 21:02:28 checking 118B
+09-Jul-2013 21:02:43 checking 118C
+09-Jul-2013 21:02:58 checking 119B
+09-Jul-2013 21:03:13 checking 119C
+09-Jul-2013 21:03:28 checking 120A
+09-Jul-2013 21:03:43 checking 120B
+09-Jul-2013 21:03:58 checking 122B
+09-Jul-2013 21:04:13 checking 123A
+09-Jul-2013 21:04:28 checking 123B
+09-Jul-2013 21:04:43 checking 123C
+09-Jul-2013 21:04:57 checking 126A
+09-Jul-2013 21:05:12 checking 126B
+09-Jul-2013 21:05:27 checking 126C
+09-Jul-2013 21:05:44 checking 134A
+09-Jul-2013 21:05:59 checking 134B
+09-Jul-2013 21:06:14 checking 134C
+09-Jul-2013 21:06:29 checking 139A
+09-Jul-2013 21:06:43 checking 139B
+09-Jul-2013 21:06:58 checking 141A
+09-Jul-2013 21:07:13 checking 141B
+09-Jul-2013 21:07:28 checking 141C
+09-Jul-2013 21:07:43 checking 146A
+09-Jul-2013 21:07:58 checking 148A
+09-Jul-2013 21:08:13 checking 148B
+09-Jul-2013 21:08:28 checking 152A
+09-Jul-2013 21:08:43 checking 152B
+09-Jul-2013 21:08:58 checking 152C
+09-Jul-2013 21:09:13 checking 154A
+09-Jul-2013 21:09:28 checking 154B
+09-Jul-2013 21:09:43 checking 154C
+09-Jul-2013 21:09:56 checking 156A
+09-Jul-2013 21:10:11 checking 156B
+09-Jul-2013 21:10:26 checking 164B
+09-Jul-2013 21:10:41 checking 167A
+09-Jul-2013 21:10:56 checking 167B
+09-Jul-2013 21:11:10 checking 167C
+09-Jul-2013 21:11:25 checking 171A
+09-Jul-2013 21:11:38 checking 171B
+09-Jul-2013 21:11:51 checking 171C
+09-Jul-2013 21:12:03 checking 172A
+09-Jul-2013 21:12:18 checking 172B
+09-Jul-2013 21:12:33 checking 172C
+09-Jul-2013 21:12:48 checking 174A
+09-Jul-2013 21:13:03 checking 174B
+09-Jul-2013 21:13:18 checking 175A
+09-Jul-2013 21:13:33 checking 175B
+09-Jul-2013 21:13:48 checking 179B
+09-Jul-2013 21:14:03 checking 179C
+09-Jul-2013 21:14:18 checking 185A
+09-Jul-2013 21:14:33 checking 185B
+09-Jul-2013 21:14:48 checking 185C
+09-Jul-2013 21:15:03 checking 186A
+09-Jul-2013 21:15:18 checking 186B
+09-Jul-2013 21:15:33 checking 190A
+09-Jul-2013 21:15:48 checking 190B
+09-Jul-2013 21:16:02 checking 190C
+09-Jul-2013 21:16:15 checking 192B
+09-Jul-2013 21:16:28 checking 192C
+09-Jul-2013 21:16:41 checking 193B
+09-Jul-2013 21:16:56 checking 193C
+09-Jul-2013 21:17:11 checking 194B
+09-Jul-2013 21:17:26 checking 194C
+09-Jul-2013 21:17:42 checking 195A
+09-Jul-2013 21:17:56 checking 195B
+09-Jul-2013 21:18:11 checking 196A
+09-Jul-2013 21:18:26 checking 196B
+09-Jul-2013 21:18:40 checking 196C
+09-Jul-2013 21:18:54 checking 197B
+09-Jul-2013 21:19:08 checking 198A
+09-Jul-2013 21:19:23 checking 198B
+09-Jul-2013 21:19:37 checking 198C
+09-Jul-2013 21:19:51 checking 215A
+09-Jul-2013 21:20:06 checking 215B
+09-Jul-2013 21:20:21 checking 215C
+09-Jul-2013 21:20:36 checking 216A
+09-Jul-2013 21:20:48 checking 222A
+09-Jul-2013 21:21:03 checking 248A
+09-Jul-2013 21:21:18 checking 248B
+09-Jul-2013 21:21:33 checking 248C
+09-Jul-2013 21:21:48 checking 249A
+09-Jul-2013 21:22:03 checking 249B
+09-Jul-2013 21:22:17 checking 249C
+09-Jul-2013 21:22:32 checking 250A
+09-Jul-2013 21:22:47 checking 250B
+09-Jul-2013 21:23:02 checking 250C
+09-Jul-2013 21:23:17 checking 252A
+09-Jul-2013 21:23:32 checking 252B
+09-Jul-2013 21:23:47 checking 252C
+09-Jul-2013 21:24:02 checking 256A
+09-Jul-2013 21:24:14 checking 256B
+09-Jul-2013 21:24:27 checking 256C
+09-Jul-2013 21:24:39 checking 257A
+09-Jul-2013 21:24:54 checking 259A
+09-Jul-2013 21:25:09 checking 259B
+09-Jul-2013 21:25:24 checking 260C
+09-Jul-2013 21:25:39 checking 262B
+09-Jul-2013 21:25:54 checking 263B
+09-Jul-2013 21:26:09 checking 269B
+09-Jul-2013 21:26:24 checking 276A
+09-Jul-2013 21:26:39 checking 276B
+09-Jul-2013 21:26:54 checking 278A
+09-Jul-2013 21:27:12 checking 279A
+09-Jul-2013 21:27:27 checking 279B
+09-Jul-2013 21:27:42 checking 279C
+09-Jul-2013 21:27:57 checking 280A
+09-Jul-2013 21:28:09 checking 280B
+09-Jul-2013 21:28:22 checking 280C
+09-Jul-2013 21:28:34 checking 284A
+09-Jul-2013 21:28:49 checking 286B
+09-Jul-2013 21:29:04 checking 296B
+09-Jul-2013 21:29:22 checking 308A
+09-Jul-2013 21:29:38 checking 308B
+09-Jul-2013 21:29:55 checking 308C
+09-Jul-2013 21:30:11 checking 313A
+09-Jul-2013 21:30:26 checking 313B
+09-Jul-2013 21:30:42 checking 322C
+09-Jul-2013 21:30:59 checking 327A
+09-Jul-2013 21:31:12 checking 327B
+09-Jul-2013 21:31:25 checking 327C
+09-Jul-2013 21:31:39 checking 328B
+09-Jul-2013 21:31:54 checking 328C
+09-Jul-2013 21:32:09 checking 362A
+09-Jul-2013 21:32:22 checking 362B
+09-Jul-2013 21:32:35 checking 362C
+09-Jul-2013 21:32:46 checking 362D
+09-Jul-2013 21:32:59 checking 366A
+09-Jul-2013 21:33:13 checking 366B
+09-Jul-2013 21:33:28 checking 377A
+09-Jul-2013 21:33:43 checking 377B
+09-Jul-2013 21:33:58 checking 377C
+09-Jul-2013 21:34:13 checking 378A
+09-Jul-2013 21:34:28 checking 378B
+09-Jul-2013 21:34:43 checking 378C
+09-Jul-2013 21:34:56 checking 380A
+09-Jul-2013 21:35:11 checking 380B
+09-Jul-2013 21:35:26 checking 380C
+09-Jul-2013 21:35:41 checking 382A
+09-Jul-2013 21:35:55 checking 382B
+09-Jul-2013 21:36:10 checking 384A
+09-Jul-2013 21:36:25 checking 384B
+09-Jul-2013 21:36:40 checking 384C
+09-Jul-2013 21:36:54 checking 444A
+09-Jul-2013 21:37:09 checking 444B
+09-Jul-2013 21:37:24 checking 444C
+09-Jul-2013 21:37:39 checking 445A
+09-Jul-2013 21:37:54 checking 445B
+09-Jul-2013 21:38:09 checking 445C
+09-Jul-2013 21:38:24 checking 447A
+09-Jul-2013 21:38:39 checking 448A
+09-Jul-2013 21:38:54 checking 448B
+09-Jul-2013 21:39:09 checking 448C
+09-Jul-2013 21:39:24 checking 450B
+09-Jul-2013 21:39:42 checking 450C
+09-Jul-2013 21:40:00 checking 451B
+09-Jul-2013 21:40:16 checking 451C
+09-Jul-2013 21:40:32 checking 453A
+09-Jul-2013 21:40:47 checking 453B
+09-Jul-2013 21:41:02 checking 453C
+09-Jul-2013 21:41:17 checking 461A
+09-Jul-2013 21:41:35 checking 461B
+09-Jul-2013 21:41:53 checking 463A
+09-Jul-2013 21:42:10 checking 463B
+09-Jul-2013 21:42:27 checking 463C
+09-Jul-2013 21:42:44 checking 466A
+09-Jul-2013 21:43:01 checking 466B
+09-Jul-2013 21:43:16 checking 466C
+09-Jul-2013 21:43:33 checking 468A
+09-Jul-2013 21:43:48 checking 468B
+09-Jul-2013 21:44:03 checking 468C
+09-Jul-2013 21:44:18 checking 476A
+09-Jul-2013 21:44:35 checking 476B
+09-Jul-2013 21:44:53 checking 477A
+09-Jul-2013 21:45:08 checking 477B
+09-Jul-2013 21:45:23 checking 477C
+90 xml files
+09-Jul-2013 21:45:41 scaling 068A
+09-Jul-2013 21:46:10 scaling 068B
+09-Jul-2013 21:46:39 scaling 068C
+09-Jul-2013 21:47:24 scaling 070A
+09-Jul-2013 21:48:06 scaling 070B
+09-Jul-2013 21:48:50 scaling 070C
+09-Jul-2013 21:49:32 scaling 073A
+09-Jul-2013 21:49:53 scaling 073B
+09-Jul-2013 21:50:15 scaling 073C
+09-Jul-2013 21:50:37 scaling 074A
+09-Jul-2013 21:51:22 scaling 074B
+09-Jul-2013 21:52:08 scaling 074C
+09-Jul-2013 21:52:53 scaling 079A
+09-Jul-2013 21:53:23 scaling 079B
+09-Jul-2013 21:53:52 scaling 079C
+09-Jul-2013 21:54:22 scaling 081A
+09-Jul-2013 21:54:49 scaling 081B
+09-Jul-2013 21:55:32 scaling 081C
+09-Jul-2013 21:56:13 scaling 082A
+09-Jul-2013 21:56:49 scaling 082B
+09-Jul-2013 21:57:26 scaling 082C
+09-Jul-2013 21:58:03 scaling 084A
+09-Jul-2013 21:58:37 scaling 084B
+09-Jul-2013 21:59:11 scaling 084C
+09-Jul-2013 21:59:45 scaling 090A
+09-Jul-2013 22:00:20 scaling 090B
+09-Jul-2013 22:00:57 scaling 090C
+09-Jul-2013 22:01:31 scaling 099A
+09-Jul-2013 22:02:12 scaling 099B
+09-Jul-2013 22:02:54 scaling 099C
+09-Jul-2013 22:03:35 scaling 109A
+09-Jul-2013 22:04:13 scaling 109B
+09-Jul-2013 22:04:51 scaling 109C
+09-Jul-2013 22:05:27 scaling 113A
+09-Jul-2013 22:06:08 scaling 113B
+09-Jul-2013 22:06:50 scaling 113C
+09-Jul-2013 22:07:30 scaling 114A
+09-Jul-2013 22:08:15 scaling 114B
+09-Jul-2013 22:09:00 scaling 114C
+09-Jul-2013 22:09:43 scaling 118A
+09-Jul-2013 22:10:24 scaling 118B
+09-Jul-2013 22:11:07 scaling 118C
+09-Jul-2013 22:11:49 scaling 119B
+09-Jul-2013 22:12:29 scaling 119C
+09-Jul-2013 22:13:08 scaling 120A
+09-Jul-2013 22:13:42 scaling 120B
+09-Jul-2013 22:14:17 scaling 122B
+09-Jul-2013 22:14:55 scaling 123A
+09-Jul-2013 22:15:34 scaling 123B
+09-Jul-2013 22:16:14 scaling 123C
+09-Jul-2013 22:16:52 scaling 126A
+09-Jul-2013 22:17:31 scaling 126B
+09-Jul-2013 22:18:12 scaling 126C
+09-Jul-2013 22:18:55 scaling 134A
+09-Jul-2013 22:19:36 scaling 134B
+09-Jul-2013 22:20:17 scaling 134C
+09-Jul-2013 22:20:56 scaling 139A
+09-Jul-2013 22:21:36 scaling 139B
+09-Jul-2013 22:22:17 scaling 141A
+09-Jul-2013 22:22:53 scaling 141B
+09-Jul-2013 22:23:29 scaling 141C
+09-Jul-2013 22:24:06 scaling 146A
+09-Jul-2013 22:24:43 scaling 148A
+09-Jul-2013 22:25:22 scaling 148B
+09-Jul-2013 22:26:01 scaling 152A
+09-Jul-2013 22:26:36 scaling 152B
+09-Jul-2013 22:27:10 scaling 152C
+09-Jul-2013 22:27:44 scaling 154A
+09-Jul-2013 22:28:27 scaling 154B
+09-Jul-2013 22:28:55 scaling 154C
+09-Jul-2013 22:29:21 scaling 156A
+09-Jul-2013 22:30:02 scaling 156B
+09-Jul-2013 22:30:42 scaling 164B
+09-Jul-2013 22:31:19 scaling 167A
+09-Jul-2013 22:32:00 scaling 167B
+09-Jul-2013 22:32:40 scaling 167C
+09-Jul-2013 22:33:15 scaling 171A
+09-Jul-2013 22:33:45 scaling 171B
+09-Jul-2013 22:34:14 scaling 171C
+09-Jul-2013 22:34:44 scaling 172A
+09-Jul-2013 22:35:23 scaling 172B
+09-Jul-2013 22:36:04 scaling 172C
+09-Jul-2013 22:36:42 scaling 174A
+09-Jul-2013 22:37:18 scaling 174B
+09-Jul-2013 22:37:52 scaling 175A
+09-Jul-2013 22:38:27 scaling 175B
+09-Jul-2013 22:39:04 scaling 179B
+09-Jul-2013 22:39:46 scaling 179C
+09-Jul-2013 22:40:25 scaling 185A
+09-Jul-2013 22:41:03 scaling 185B
+09-Jul-2013 22:41:45 scaling 185C
+09-Jul-2013 22:42:26 scaling 186A
+09-Jul-2013 22:43:04 scaling 186B
+09-Jul-2013 22:43:46 scaling 190A
+09-Jul-2013 22:44:24 scaling 190B
+09-Jul-2013 22:45:05 scaling 190C
+09-Jul-2013 22:45:31 scaling 192B
+09-Jul-2013 22:45:58 scaling 192C
+09-Jul-2013 22:46:21 scaling 193B
+09-Jul-2013 22:47:04 scaling 193C
+09-Jul-2013 22:47:44 scaling 194B
+09-Jul-2013 22:48:24 scaling 194C
+09-Jul-2013 22:48:47 scaling 195A
+09-Jul-2013 22:49:21 scaling 195B
+09-Jul-2013 22:49:56 scaling 196A
+09-Jul-2013 22:50:34 scaling 196B
+09-Jul-2013 22:51:13 scaling 196C
+09-Jul-2013 22:51:50 scaling 197B
+09-Jul-2013 22:52:27 scaling 198A
+09-Jul-2013 22:53:06 scaling 198B
+09-Jul-2013 22:53:45 scaling 198C
+09-Jul-2013 22:54:23 scaling 215A
+09-Jul-2013 22:55:06 scaling 215B
+09-Jul-2013 22:55:49 scaling 215C
+09-Jul-2013 22:56:32 scaling 216A
+09-Jul-2013 22:57:03 scaling 222A
+09-Jul-2013 22:57:41 scaling 248A
+09-Jul-2013 22:58:15 scaling 248B
+09-Jul-2013 22:58:50 scaling 248C
+09-Jul-2013 22:59:24 scaling 249A
+09-Jul-2013 23:00:05 scaling 249B
+09-Jul-2013 23:00:46 scaling 249C
+09-Jul-2013 23:01:27 scaling 250A
+09-Jul-2013 23:02:10 scaling 250B
+09-Jul-2013 23:02:53 scaling 250C
+09-Jul-2013 23:03:36 scaling 252A
+09-Jul-2013 23:04:20 scaling 252B
+09-Jul-2013 23:05:03 scaling 252C
+09-Jul-2013 23:05:46 scaling 256A
+09-Jul-2013 23:06:20 scaling 256B
+09-Jul-2013 23:06:54 scaling 256C
+09-Jul-2013 23:07:29 scaling 257A
+09-Jul-2013 23:08:11 scaling 259A
+09-Jul-2013 23:08:56 scaling 259B
+09-Jul-2013 23:09:39 scaling 260C
+09-Jul-2013 23:10:19 scaling 262B
+09-Jul-2013 23:11:01 scaling 263B
+09-Jul-2013 23:11:44 scaling 269B
+09-Jul-2013 23:12:27 scaling 276A
+09-Jul-2013 23:13:09 scaling 276B
+09-Jul-2013 23:13:52 scaling 278A
+09-Jul-2013 23:14:45 scaling 279A
+09-Jul-2013 23:15:29 scaling 279B
+09-Jul-2013 23:16:13 scaling 279C
+09-Jul-2013 23:16:57 scaling 280A
+09-Jul-2013 23:17:35 scaling 280B
+09-Jul-2013 23:18:14 scaling 280C
+09-Jul-2013 23:18:56 scaling 284A
+09-Jul-2013 23:19:41 scaling 286B
+09-Jul-2013 23:20:26 scaling 296B
+09-Jul-2013 23:21:21 scaling 308A
+09-Jul-2013 23:22:07 scaling 308B
+09-Jul-2013 23:22:53 scaling 308C
+09-Jul-2013 23:23:36 scaling 313A
+09-Jul-2013 23:24:15 scaling 313B
+09-Jul-2013 23:25:00 scaling 322C
+09-Jul-2013 23:25:42 scaling 327A
+09-Jul-2013 23:26:15 scaling 327B
+09-Jul-2013 23:26:49 scaling 327C
+09-Jul-2013 23:27:24 scaling 328B
+09-Jul-2013 23:28:06 scaling 328C
+09-Jul-2013 23:28:48 scaling 362A
+09-Jul-2013 23:29:24 scaling 362B
+09-Jul-2013 23:29:59 scaling 362C
+09-Jul-2013 23:30:21 scaling 362D
+09-Jul-2013 23:30:56 scaling 366A
+09-Jul-2013 23:31:42 scaling 366B
+09-Jul-2013 23:32:27 scaling 377A
+09-Jul-2013 23:33:03 scaling 377B
+09-Jul-2013 23:33:39 scaling 377C
+09-Jul-2013 23:34:16 scaling 378A
+09-Jul-2013 23:34:50 scaling 378B
+09-Jul-2013 23:35:25 scaling 378C
+09-Jul-2013 23:35:47 scaling 380A
+09-Jul-2013 23:36:22 scaling 380B
+09-Jul-2013 23:36:57 scaling 380C
+09-Jul-2013 23:37:31 scaling 382A
+09-Jul-2013 23:38:15 scaling 382B
+09-Jul-2013 23:39:01 scaling 384A
+09-Jul-2013 23:39:36 scaling 384B
+09-Jul-2013 23:40:11 scaling 384C
+09-Jul-2013 23:40:45 scaling 444A
+09-Jul-2013 23:41:29 scaling 444B
+09-Jul-2013 23:42:13 scaling 444C
+09-Jul-2013 23:42:57 scaling 445A
+09-Jul-2013 23:43:34 scaling 445B
+09-Jul-2013 23:44:14 scaling 445C
+09-Jul-2013 23:44:52 scaling 447A
+09-Jul-2013 23:45:32 scaling 448A
+09-Jul-2013 23:46:12 scaling 448B
+09-Jul-2013 23:46:51 scaling 448C
+09-Jul-2013 23:47:31 scaling 450B
+09-Jul-2013 23:48:20 scaling 450C
+09-Jul-2013 23:49:05 scaling 451B
+09-Jul-2013 23:49:49 scaling 451C
+09-Jul-2013 23:50:32 scaling 453A
+09-Jul-2013 23:51:14 scaling 453B
+09-Jul-2013 23:51:56 scaling 453C
+09-Jul-2013 23:52:38 scaling 461A
+09-Jul-2013 23:53:29 scaling 461B
+09-Jul-2013 23:54:20 scaling 463A
+09-Jul-2013 23:55:04 scaling 463B
+09-Jul-2013 23:55:49 scaling 463C
+09-Jul-2013 23:56:31 scaling 466A
+09-Jul-2013 23:57:17 scaling 466B
+09-Jul-2013 23:58:06 scaling 466C
+09-Jul-2013 23:58:55 scaling 468A
+09-Jul-2013 23:59:35 scaling 468B
+10-Jul-2013 00:00:15 scaling 468C
+10-Jul-2013 00:00:56 scaling 476A
+10-Jul-2013 00:01:48 scaling 476B
+10-Jul-2013 00:02:40 scaling 477A
+10-Jul-2013 00:03:24 scaling 477B
+10-Jul-2013 00:04:07 scaling 477C
+90 xml files
+068A:  size pass, segImg pass, oriImg pass, continuity pass.
+068B:  size pass, segImg pass, oriImg pass, continuity pass.
+068C:  size pass, segImg pass, oriImg pass, continuity pass.
+070A:  size pass, segImg pass, oriImg pass, continuity pass.
+070B:  size pass, segImg pass, oriImg pass, continuity pass.
+070C:  size pass, segImg pass, oriImg pass, continuity pass.
+073A:  size pass, segImg pass, oriImg pass, continuity pass.
+073B:  size pass, segImg pass, oriImg pass, continuity pass.
+073C:  size pass, segImg pass, oriImg pass, continuity pass.
+074A:  size pass, segImg pass, oriImg pass, continuity pass.
+074B:  size pass, segImg pass, oriImg pass, continuity pass.
+074C:  size pass, segImg pass, oriImg pass, continuity pass.
+079A:  size pass, segImg pass, oriImg pass, continuity pass.
+079B:  size pass, segImg pass, oriImg pass, continuity pass.
+079C:  size pass, segImg pass, oriImg pass, continuity pass.
+081A:  size pass, segImg pass, oriImg pass, continuity pass.
+081B:  size pass, segImg pass, oriImg pass, continuity pass.
+081C:  size pass, segImg pass, oriImg pass, continuity pass.
+082A:  size pass, segImg pass, oriImg pass, continuity pass.
+082B:  size pass, segImg pass, oriImg pass, continuity pass.
+082C:  size pass, segImg pass, oriImg pass, continuity pass.
+084A:  size pass, segImg pass, oriImg pass, continuity pass.
+084B:  size pass, segImg pass, oriImg pass, continuity pass.
+084C:  size pass, segImg pass, oriImg pass, continuity pass.
+090A:  size pass, segImg pass, oriImg pass, continuity pass.
+090B:  size pass, segImg pass, oriImg pass, continuity pass.
+090C:  size pass, segImg pass, oriImg pass, continuity pass.
+099A:  size pass, segImg pass, oriImg pass, continuity pass.
+099B:  size pass, segImg pass, oriImg pass, continuity pass.
+099C:  size pass, segImg pass, oriImg pass, continuity pass.
+109A:  size pass, segImg pass, oriImg pass, continuity pass.
+109B:  size pass, segImg pass, oriImg pass, continuity pass.
+109C:  size pass, segImg pass, oriImg pass, continuity pass.
+113A:  size pass, segImg pass, oriImg pass, continuity pass.
+113B:  size pass, segImg pass, oriImg pass, continuity pass.
+113C:  size pass, segImg pass, oriImg pass, continuity pass.
+114A:  size pass, segImg pass, oriImg pass, continuity pass.
+114B:  size pass, segImg pass, oriImg pass, continuity pass.
+114C:  size pass, segImg pass, oriImg pass, continuity pass.
+118A:  size pass, segImg pass, oriImg pass, continuity pass.
+118B:  size pass, segImg pass, oriImg pass, continuity pass.
+118C:  size pass, segImg pass, oriImg pass, continuity pass.
+119B:  size pass, segImg pass, oriImg pass, continuity pass.
+119C:  size pass, segImg pass, oriImg pass, continuity pass.
+120A:  size pass, segImg pass, oriImg pass, continuity pass.
+120B:  size pass, segImg pass, oriImg pass, continuity pass.
+122B:  size pass, segImg pass, oriImg pass, continuity pass.
+123A:  size pass, segImg pass, oriImg pass, continuity pass.
+123B:  size pass, segImg pass, oriImg pass, continuity pass.
+123C:  size pass, segImg pass, oriImg pass, continuity pass.
+126A:  size pass, segImg pass, oriImg pass, continuity pass.
+126B:  size pass, segImg pass, oriImg pass, continuity pass.
+126C:  size pass, segImg pass, oriImg pass, continuity pass.
+134A:  size pass, segImg pass, oriImg pass, continuity pass.
+134B:  size pass, segImg pass, oriImg pass, continuity pass.
+134C:  size pass, segImg pass, oriImg pass, continuity pass.
+139A:  size pass, segImg pass, oriImg pass, continuity pass.
+139B:  size pass, segImg pass, oriImg pass, continuity pass.
+141A:  size pass, segImg pass, oriImg pass, continuity pass.
+141B:  size pass, segImg pass, oriImg pass, continuity pass.
+141C:  size pass, segImg pass, oriImg pass, continuity pass.
+146A:  size pass, segImg pass, oriImg pass, continuity pass.
+148A:  size pass, segImg pass, oriImg pass, continuity pass.
+148B:  size pass, segImg pass, oriImg pass, continuity pass.
+152A:  size pass, segImg pass, oriImg pass, continuity pass.
+152B:  size pass, segImg pass, oriImg pass, continuity pass.
+152C:  size pass, segImg pass, oriImg pass, continuity pass.
+154A:  size pass, segImg pass, oriImg pass, continuity pass.
+154B:  size pass, segImg pass, oriImg pass, continuity pass.
+154C:  size pass, segImg pass, oriImg pass, continuity pass.
+156A:  size pass, segImg pass, oriImg pass, continuity pass.
+156B:  size pass, segImg pass, oriImg pass, continuity pass.
+164B:  size pass, segImg pass, oriImg pass, continuity pass.
+167A:  size pass, segImg pass, oriImg pass, continuity pass.
+167B:  size pass, segImg pass, oriImg pass, continuity pass.
+167C:  size pass, segImg pass, oriImg pass, continuity pass.
+171A:  size pass, segImg pass, oriImg pass, continuity pass.
+171B:  size pass, segImg pass, oriImg pass, continuity pass.
+171C:  size pass, segImg pass, oriImg pass, continuity pass.
+172A:  size pass, segImg pass, oriImg pass, continuity pass.
+172B:  size pass, segImg pass, oriImg pass, continuity pass.
+172C:  size pass, segImg pass, oriImg pass, continuity pass.
+174A:  size pass, segImg pass, oriImg pass, continuity pass.
+174B:  size pass, segImg pass, oriImg pass, continuity pass.
+175A:  size pass, segImg pass, oriImg pass, continuity pass.
+175B:  size pass, segImg pass, oriImg pass, continuity pass.
+179B:  size pass, segImg pass, oriImg pass, continuity pass.
+179C:  size pass, segImg pass, oriImg pass, continuity pass.
+185A:  size pass, segImg pass, oriImg pass, continuity pass.
+185B:  size pass, segImg pass, oriImg pass, continuity pass.
+185C:  size pass, segImg pass, oriImg pass, continuity pass.
+186A:  size pass, segImg pass, oriImg pass, continuity pass.
+186B:  size pass, segImg pass, oriImg pass, continuity pass.
+190A:  size pass, segImg pass, oriImg pass, continuity pass.
+190B:  size pass, segImg pass, oriImg pass, continuity pass.
+190C:  size pass, segImg pass, oriImg pass, continuity pass.
+192B:  size pass, segImg pass, oriImg pass, continuity pass.
+192C:  size pass, segImg pass, oriImg pass, continuity pass.
+193B:  size pass, segImg pass, oriImg pass, continuity pass.
+193C:  size pass, segImg pass, oriImg pass, continuity pass.
+194B:  size pass, segImg pass, oriImg pass, continuity pass.
+194C:  size pass, segImg pass, oriImg pass, continuity pass.
+195A:  size pass, segImg pass, oriImg pass, continuity pass.
+195B:  size pass, segImg pass, oriImg pass, continuity pass.
+196A:  size pass, segImg pass, oriImg pass, continuity pass.
+196B:  size pass, segImg pass, oriImg pass, continuity pass.
+196C:  size pass, segImg pass, oriImg pass, continuity pass.
+197B:  size pass, segImg pass, oriImg pass, continuity pass.
+198A:  size pass, segImg pass, oriImg pass, continuity pass.
+198B:  size pass, segImg pass, oriImg pass, continuity pass.
+198C:  size pass, segImg pass, oriImg pass, continuity pass.
+215A:  size pass, segImg pass, oriImg pass, continuity pass.
+215B:  size pass, segImg pass, oriImg pass, continuity pass.
+215C:  size pass, segImg pass, oriImg pass, continuity pass.
+216A:  size pass, segImg pass, oriImg pass, continuity pass.
+222A:  size pass, segImg pass, oriImg pass, continuity pass.
+248A:  size pass, segImg pass, oriImg pass, continuity pass.
+248B:  size pass, segImg pass, oriImg pass, continuity pass.
+248C:  size pass, segImg pass, oriImg pass, continuity pass.
+249A:  size pass, segImg pass, oriImg pass, continuity pass.
+249B:  size pass, segImg pass, oriImg pass, continuity pass.
+249C:  size pass, segImg pass, oriImg pass, continuity pass.
+250A:  size pass, segImg pass, oriImg pass, continuity pass.
+250B:  size pass, segImg pass, oriImg pass, continuity pass.
+250C:  size pass, segImg pass, oriImg pass, continuity pass.
+252A:  size pass, segImg pass, oriImg pass, continuity pass.
+252B:  size pass, segImg pass, oriImg pass, continuity pass.
+252C:  size pass, segImg pass, oriImg pass, continuity pass.
+256A:  size pass, segImg pass, oriImg pass, continuity pass.
+256B:  size pass, segImg pass, oriImg pass, continuity pass.
+256C:  size pass, segImg pass, oriImg pass, continuity pass.
+257A:  size pass, segImg pass, oriImg pass, continuity pass.
+259A:  size pass, segImg pass, oriImg pass, continuity pass.
+259B:  size pass, segImg pass, oriImg pass, continuity pass.
+260C:  size pass, segImg pass, oriImg pass, continuity pass.
+262B:  size pass, segImg pass, oriImg pass, continuity pass.
+263B:  size pass, segImg pass, oriImg pass, continuity pass.
+269B:  size pass, segImg pass, oriImg pass, continuity pass.
+276A:  size pass, segImg pass, oriImg pass, continuity pass.
+276B:  size pass, segImg pass, oriImg pass, continuity pass.
+278A:  size pass, segImg pass, oriImg pass, continuity pass.
+279A:  size pass, segImg pass, oriImg pass, continuity pass.
+279B:  size pass, segImg pass, oriImg pass, continuity pass.
+279C:  size pass, segImg pass, oriImg pass, continuity pass.
+280A:  size pass, segImg pass, oriImg pass, continuity pass.
+280B:  size pass, segImg pass, oriImg pass, continuity pass.
+280C:  size pass, segImg pass, oriImg pass, continuity pass.
+284A:  size pass, segImg pass, oriImg pass, continuity pass.
+286B:  size pass, segImg pass, oriImg pass, continuity pass.
+296B:  size pass, segImg pass, oriImg pass, continuity pass.
+308A:  size pass, segImg pass, oriImg pass, continuity pass.
+308B:  size pass, segImg pass, oriImg pass, continuity pass.
+308C:  size pass, segImg pass, oriImg pass, continuity pass.
+313A:  size pass, segImg pass, oriImg pass, continuity pass.
+313B:  size pass, segImg pass, oriImg pass, continuity pass.
+322C:  size pass, segImg pass, oriImg pass, continuity pass.
+327A:  size pass, segImg pass, oriImg pass, continuity pass.
+327B:  size pass, segImg pass, oriImg pass, continuity pass.
+327C:  size pass, segImg pass, oriImg pass, continuity pass.
+328B:  size pass, segImg pass, oriImg pass, continuity pass.
+328C:  size pass, segImg pass, oriImg pass, continuity pass.
+362A:  size pass, segImg pass, oriImg pass, continuity pass.
+362B:  size pass, segImg pass, oriImg pass, continuity pass.
+362C:  size pass, segImg pass, oriImg pass, continuity pass.
+362D:  size pass, segImg pass, oriImg pass, continuity pass.
+366A:  size pass, segImg pass, oriImg pass, continuity pass.
+366B:  size pass, segImg pass, oriImg pass, continuity pass.
+377A:  size pass, segImg pass, oriImg pass, continuity pass.
+377B:  size pass, segImg pass, oriImg pass, continuity pass.
+377C:  size pass, segImg pass, oriImg pass, continuity pass.
+378A:  size pass, segImg pass, oriImg pass, continuity pass.
+378B:  size pass, segImg pass, oriImg pass, continuity pass.
+378C:  size pass, segImg pass, oriImg pass, continuity pass.
+380A:  size pass, segImg pass, oriImg pass, continuity pass.
+380B:  size pass, segImg pass, oriImg pass, continuity pass.
+380C:  size pass, segImg pass, oriImg pass, continuity pass.
+382A:  size pass, segImg pass, oriImg pass, continuity pass.
+382B:  size pass, segImg pass, oriImg pass, continuity pass.
+384A:  size pass, segImg pass, oriImg pass, continuity pass.
+384B:  size pass, segImg pass, oriImg pass, continuity pass.
+384C:  size pass, segImg pass, oriImg pass, continuity pass.
+444A:  size pass, segImg pass, oriImg pass, continuity pass.
+444B:  size pass, segImg pass, oriImg pass, continuity pass.
+444C:  size pass, segImg pass, oriImg pass, continuity pass.
+445A:  size pass, segImg pass, oriImg pass, continuity pass.
+445B:  size pass, segImg pass, oriImg pass, continuity pass.
+445C:  size pass, segImg pass, oriImg pass, continuity pass.
+447A:  size pass, segImg pass, oriImg pass, continuity pass.
+448A:  size pass, segImg pass, oriImg pass, continuity pass.
+448B:  size pass, segImg pass, oriImg pass, continuity pass.
+448C:  size pass, segImg pass, oriImg pass, continuity pass.
+450B:  size pass, segImg pass, oriImg pass, continuity pass.
+450C:  size pass, segImg pass, oriImg pass, continuity pass.
+451B:  size pass, segImg pass, oriImg pass, continuity pass.
+451C:  size pass, segImg pass, oriImg pass, continuity pass.
+453A:  size pass, segImg pass, oriImg pass, continuity pass.
+453B:  size pass, segImg pass, oriImg pass, continuity pass.
+453C:  size pass, segImg pass, oriImg pass, continuity pass.
+461A:  size pass, segImg pass, oriImg pass, continuity pass.
+461B:  size pass, segImg pass, oriImg pass, continuity pass.
+463A:  size pass, segImg pass, oriImg pass, continuity pass.
+463B:  size pass, segImg pass, oriImg pass, continuity pass.
+463C:  size pass, segImg pass, oriImg pass, continuity pass.
+466A:  size pass, segImg pass, oriImg pass, continuity pass.
+466B:  size pass, segImg pass, oriImg pass, continuity pass.
+466C:  size pass, segImg pass, oriImg pass, continuity pass.
+468A:  size pass, segImg pass, oriImg pass, continuity pass.
+468B:  size pass, segImg pass, oriImg pass, continuity pass.
+468C:  size pass, segImg pass, oriImg pass, continuity pass.
+476A:  size pass, segImg pass, oriImg pass, continuity pass.
+476B:  size pass, segImg pass, oriImg pass, continuity pass.
+477A:  size pass, segImg pass, oriImg pass, continuity pass.
+477B:  size pass, segImg pass, oriImg pass, continuity pass.
+477C:  size pass, segImg pass, oriImg pass, continuity pass.
