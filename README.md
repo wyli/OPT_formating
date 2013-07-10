@@ -15,23 +15,22 @@ First make sure NIFTI in on matlab path and the file `load_nii_img.m` should be 
 Some image blocks have no corresponding annotations.   
 dataset file (Image) path format:   
 
-`[DatasetIndex]/Images/[Type]/[ImageIndex]/[ImageBlockIndex]/*.bmp`
-`[DatasetIndex]/Images/[Type]/[ImageIndex]/[ImageBlockIndex]/Stack.img`
-`[DatasetIndex]/Images/[Type]/[ImageIndex]/[ImageBlockIndex]/Stack.hdr`
+`[DatasetIndex]/Images/[Type]/[ImageIndex]/[ImageBlockIndex]/*.bmp`   
+`[DatasetIndex]/Images/[Type]/[ImageIndex]/[ImageBlockIndex]/Stack.img`   
+`[DatasetIndex]/Images/[Type]/[ImageIndex]/[ImageBlockIndex]/Stack.hdr`   
 
-dataset file (Annotation) path format:
+dataset file (Annotation) path format:   
 
-`[DatasetIndex]/Annotated/[Type]/[ImageBlockIndex].img`
-`[DatasetIndex]/Annotated/[Type]/[ImageBlockIndex].hdr`
+`[DatasetIndex]/Annotated/[Type]/[ImageBlockIndex].img`   
+`[DatasetIndex]/Annotated/[Type]/[ImageBlockIndex].hdr`   
 
-Output structures:
+Output structures:   
 
-`[dataset]/Annotation/[ImageBlockIndex].mat`
-`[dataset]/Image/[ImageBlockIndex].mat`
-`[dataset]/Description/[ImageIndex].xml`
+`[dataset]/Annotation/[ImageBlockIndex].mat`   
+`[dataset]/Image/[ImageBlockIndex].mat`   
+`[dataset]/Description/[ImageIndex].xml`   
 
 ##### !
 
-447C removed (size not consistent).
-
-193A removed (not scaled).
+447C removed (size not consistent).   
+193A removed (not scaled).   
