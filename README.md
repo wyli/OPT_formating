@@ -32,6 +32,7 @@ dataset file (Annotation) path format:
 `[DatasetIndex]/Annotated/[Type]/[ImageBlockIndex].hdr`
 
 Output structures:
+
 `[dataset]/Annotation/[ImageBlockIndex].mat`
 `[dataset]/Image/[ImageBlockIndex].mat`
 `[dataset]/Description/[ImageIndex].xml`
