@@ -33,6 +33,11 @@ for i = 1:size(xml_filenames, 1)
         flag = 0;
         loc = findPatch(...
             affineImage(segFile.img, flag), [5, 5, 5], [5, 5, 5]);
+        if size(rec.annotation.part, 2) == 1
+            rec.annotation.needRotate = flag;
+        else
+            rec.annotation.needRotate{p} = flag;
+        end
 
         while flag < 3 && isempty(loc)
 
