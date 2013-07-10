@@ -3,9 +3,11 @@ Using matlab with NIFTI toolbox, converting files into consistent formats.
 1. mv annotations into the annotations folder, make sure names are consistent. The names take the form:
 `[0-9]{3}.img` and `[0-9]{3}.hdr`.
 
-2. [optional 1] generate Stack.img for images.`IMG_to_stack_eval.txt`
+2[optional 1]. generate Stack.img for images using ImageJ.`IMG_to_stack_eval.txt`
 
-2. [optional 2] mv images in the the image folder, make sure names are the same: `Stack.img` and `Stack.hdr`. `rename_image.sh`
+2[optional 2]. mv images in the the image folder, make sure names are the same: `Stack.img` and `Stack.hdr` using bash script. `rename_image.sh`
+
+3. prepare a checklist, examples in `checklist`.
 
 4. generate xml files `makexml.py`.
 
@@ -35,6 +37,6 @@ Output structures:
 
 ##### !
 
-447C removed (size not consistent)
+447C removed (size not consistent).
 
-193A removed (not scaled)
+193A removed (not scaled).
