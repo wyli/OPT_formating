@@ -21,40 +21,60 @@ function datasetWrapper() {
     //     "F:\\OPT_original\\OPTdataIV\\Images\\HGD\\"
     //);
     dataset = newArray(
-         "/home/wenqili/Desktop/auntie/OPTannotation/OPTdataI/Images/Cancers/",
-         "/home/wenqili/Desktop/auntie/OPTannotation/OPTdataI/Images/LGD/",
-         "/home/wenqili/Desktop/auntie/OPTannotation/OPTdataII/Images/Cancers/",
-         "/home/wenqili/Desktop/auntie/OPTannotation/OPTdataII/Images/LGD/",
-         "/home/wenqili/Desktop/auntie/OPTannotation/OPTdataIII/Images/Cancers/",
-         "/home/wenqili/Desktop/auntie/OPTannotation/OPTdataIII/Images/LGD/",
-         "/home/wenqili/Desktop/auntie/OPTannotation/OPTdataIV/Images/Cancers/",
-         "/home/wenqili/Desktop/auntie/OPTannotation/OPTdataIV/Images/HGD/
+         "OPTdataI/Images/Cancers/",
+         "OPTdataI/Images/LGD/",
+         "OPTdataII/Images/Cancers/",
+         "OPTdataII/Images/LGD/",
+         "OPTdataIII/Images/Cancers/",
+         "OPTdataIII/Images/LGD/",
+         "OPTdataIV/Images/Cancers/",
+         "OPTdataIV/Images/HGD/
     );
+    inputbase = "/home/wenqili/Desktop/auntie/OPTannotation/"
+    outbase = "/home/wenqili/textures/OPT_stacks/";
+    if(File.exists(outbase)!=1) {
+        print("no output folder");
+        return;
+    }
+
     for (i = 0; i < dataset.length; i++) {
-        pathWrapper(dataset[i]);
+        pathWrapper(inputbase, dataset[i], outbase);
     }
 }
 
-function pathWrapper(dataset) {
+function pathWrapper(intputbase,dataset,outbase) {
 
-    dir = getFileList(dataset);
+    dir = getFileList(inputbase+dataset);
     for (i = 0; i < dir.length; i++) {
 
-        subdir = getFileList(dataset + dir[i]);
+        subdir = getFileList(inputbase + dataset + dir[i]);
         for (j = 0; j < subdir.length; j++) {
 
-            imagePath = dataset + dir[i] + subdir[j];
+            imagePath = inputbase + dataset + dir[i] + subdir[j];
             imagePath = replace(imagePath, "/", File.separator);
             print("start converting: " + imagePath);
-            convert(imagePath);
+            print("output: " + outbase + dataset +dir[i]+subdir[j]);
+            if(File.exists(outbase+dataset+dir[i]+subdir[j])!=1) {
+                makealldir(outbase+dataset+dir[i]+subdir[j]);
+            }
+            outputPath = outbase+dataset+dir[i]+subdir[j];
+            convert(imagePath, outputPath);
         }
     }
 }
 
-function convert(dir1) {
+function makealldir(path_name) {
+    if(File.exists(path_name)==1) {
+        return;
+    }
+    makealldir(File.getParent(path_name));
+    File.makeDirectory(path_name);
+}
+
+function convert(dir1,dir2) {
 
     // dir1: input, dir2: output
-    dir2 = dir1;
+    //dir2 = dir1;
 
     list = filterFiles(dir1, '.*\\.bmp');
 
@@ -64,7 +84,7 @@ function convert(dir1) {
     for (i=0; i<list.length; i++) {
         showProgress(i+1, list.length);
         name = dir1+list[i];
-        print("Frame: " + name);
+        //print("Frame: " + name);
         open(name);
     }
 
