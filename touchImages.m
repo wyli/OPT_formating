@@ -10,9 +10,11 @@ xml_filenames = dir([xml_set, '*.xml']);
 fprintf('%d xml files\n', length(xml_filenames));
 
 % ../dataset/Annotated/type/index_block/
-annotation_str = 'F:/OPT_original/%s/Annotated/%s/%s%s';
+%annotation_str = 'F:/OPT_original/%s/Annotated/%s/%s%s';
+annotation_str = '/home/wenqili/Desktop/auntie/OPTannotation/%s/Annotated/%s/%s%s';
 % ../dataset/Images/type/index/index_block/
-image_str = 'F:/OPT_original/%s/Images/%s/%s/%s%s';
+%image_str = 'F:/OPT_original/%s/Images/%s/%s/%s%s';
+image_str = '/home/wenqili/Desktop/auntie/OPTannotation/%s/Images/%s/%s/%s%s';
 
 for i = 1:size(xml_filenames, 1)
     rec = VOCreadxml([xml_set, xml_filenames(i).name]);
@@ -35,10 +37,10 @@ for i = 1:size(xml_filenames, 1)
         if exist([annotation_name '.hdr'], 'file') ~= 2
             fprintf('Missing: %s.hdr\n', annotation_name);
         end
-        if exist([image_name '/Stack.img'], 'file') ~= 2
+        if exist([image_name '/Stack_1024x1024.img'], 'file') ~= 2
             fprintf('Missing: %s/Stack.img\n', image_name);
         end
-        if exist([image_name '/Stack.hdr'], 'file') ~= 2
+        if exist([image_name '/Stack_1024x1024.hdr'], 'file') ~= 2
             fprintf('Missing: %s/Stack.hdr\n', image_name);
         end
     end

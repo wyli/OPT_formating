@@ -1,5 +1,5 @@
 function checkRotations(xml_set)
-addpath(genpath('U:/archives/NIFTI_20110921'));
+%addpath(genpath('U:/archives/NIFTI_20110921'));
 %%% touch all images (check existence)
 % xml indexes
 if isempty(xml_set)
@@ -9,9 +9,9 @@ xml_filenames = dir([xml_set, '*.xml']);
 fprintf('%d xml files\n', length(xml_filenames));
 
 % ../dataset/Annotated/type/index_block/
-annotation_str = 'U:/OPTannotation/%s/Annotated/%s/%s%s';
+annotation_str = '/home/wenqili/Desktop/auntie/OPTannotation/%s/Annotated/%s/%s%s';
 % ../dataset/Images/type/index/index_block/
-image_str = 'U:/OPTannotation/%s/Images/%s/%s/%s%s';
+image_str = '/home/wenqili/Desktop/auntie/OPTannotation/%s/Images/%s/%s/%s%s';
 
  % update xml files
 for i = 1:size(xml_filenames, 1)

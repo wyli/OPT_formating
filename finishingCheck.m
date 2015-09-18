@@ -8,8 +8,8 @@ end
 xml_filenames = dir([xml_set, '*.xml']);
 fprintf('%d xml files\n', length(xml_filenames));
 
-segString = 'C:/OPT_dataset/Annotation/%s%s';
-imgString = 'C:/OPT_dataset/Image/%s%s';
+segString = '/home/wenqili/Desktop/auntie/OPT_dataset/Annotation/%s%s';
+imgString = '/home/wenqili/Desktop/auntie/OPT_dataset/Image/%s%s';
 
 for i = 1:size(xml_filenames, 1)
     
@@ -32,6 +32,8 @@ for i = 1:size(xml_filenames, 1)
         if isequal(size(x.segImg), size(y.oriImg))
             fprintf(' size pass,');
         else
+            fprintf('seg: %dx%dx%d\n', size(x.segImg));
+            fprintf('img: %dx%dx%d\n', size(y.oriImg));
             fprintf(' size error,');
         end
         if sum(sum(sum(x.segImg))) > 0

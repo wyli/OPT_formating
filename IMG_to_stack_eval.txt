@@ -10,15 +10,25 @@ macro "Batch Convert JPGs to Stack" { datasetWrapper(); }
 
 function datasetWrapper() {
     requires("1.33s");
+    //dataset = newArray(
+    //     "F:\\OPT_original\\OPTdataI\\Images\\Cancers\\",
+    //     "F:\\OPT_original\\OPTdataI\\Images\\LGD\\",
+    //     "F:\\OPT_original\\OPTdataII\\Images\\Cancers\\",
+    //     "F:\\OPT_original\\OPTdataII\\Images\\LGD\\",
+    //     "F:\\OPT_original\\OPTdataIII\\Images\\Cancers\\",
+    //     "F:\\OPT_original\\OPTdataIII\\Images\\LGD\\",
+    //     "F:\\OPT_original\\OPTdataIV\\Images\\Cancers\\",
+    //     "F:\\OPT_original\\OPTdataIV\\Images\\HGD\\"
+    //);
     dataset = newArray(
-         "F:\\OPT_original\\OPTdataI\\Images\\Cancers\\",
-         "F:\\OPT_original\\OPTdataI\\Images\\LGD\\",
-         "F:\\OPT_original\\OPTdataII\\Images\\Cancers\\",
-         "F:\\OPT_original\\OPTdataII\\Images\\LGD\\",
-         "F:\\OPT_original\\OPTdataIII\\Images\\Cancers\\",
-         "F:\\OPT_original\\OPTdataIII\\Images\\LGD\\",
-         "F:\\OPT_original\\OPTdataIV\\Images\\Cancers\\",
-         "F:\\OPT_original\\OPTdataIV\\Images\\HGD\\"
+         "/home/wenqili/Desktop/auntie/OPTannotation/OPTdataI/Images/Cancers/",
+         "/home/wenqili/Desktop/auntie/OPTannotation/OPTdataI/Images/LGD/",
+         "/home/wenqili/Desktop/auntie/OPTannotation/OPTdataII/Images/Cancers/",
+         "/home/wenqili/Desktop/auntie/OPTannotation/OPTdataII/Images/LGD/",
+         "/home/wenqili/Desktop/auntie/OPTannotation/OPTdataIII/Images/Cancers/",
+         "/home/wenqili/Desktop/auntie/OPTannotation/OPTdataIII/Images/LGD/",
+         "/home/wenqili/Desktop/auntie/OPTannotation/OPTdataIV/Images/Cancers/",
+         "/home/wenqili/Desktop/auntie/OPTannotation/OPTdataIV/Images/HGD/
     );
     for (i = 0; i < dataset.length; i++) {
         pathWrapper(dataset[i]);
@@ -60,11 +70,11 @@ function convert(dir1) {
 
     run("Images to Stack", "name=Stack title=[] use");
 
-    dir2 = dir2 + "Stack.img";
+    dir2 = dir2 + "Stack_1024x1024.img";
     print(dir2);
     
     // not for Fiji/newer version of ImageJ
-    run("Analyze 7.5...", "save=["+dir2+"]");
+    run("Analyze 7.5", "save=["+dir2+"]");
 
     print ('Done! Find the image stack at '+dir2);
     close();

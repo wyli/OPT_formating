@@ -1,4 +1,5 @@
-import xml.etree.cElementTree as ET
+#import xml.etree.cElementTree as ET
+from lxml import etree as ET
 
 with open('checklist') as f:
 
@@ -30,8 +31,9 @@ with open('checklist') as f:
         image_rotate.text = '1'
 
         tree = ET.ElementTree(root)
-        filename = 'C:/OPT_dataset/Description/' + image_index.text + '.xml'
-        tree.write(filename)
+        filename = '/home/wenqili/Desktop/auntie/OPT_dataset/desc/' + image_index.text + '.xml'
+        #tree.write(filename)
+        tree.write(filename, pretty_print=True)
 
 print 'total images: ' + str(filecount)
 print 'total blocks: ' + str(itemcount)

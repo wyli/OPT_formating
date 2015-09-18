@@ -9,13 +9,13 @@ xml_filenames = dir([xml_set, '*.xml']);
 fprintf('%d xml files\n', length(xml_filenames));
 
 % ../dataset/Annotated/type/index_block/
-annotation_str = 'F:/OPT_original/%s/Annotated/%s/%s%s';
+annotation_str = '/home/wenqili/Desktop/auntie/OPTannotation/%s/Annotated/%s/%s%s';
 % ../dataset/Images/type/index/index_block/
-image_str = 'F:/OPT_original/%s/Images/%s/%s/%s%s';
+image_str = '/home/wenqili/Desktop/auntie/OPTannotation/%s/Images/%s/%s/%s%s';
 
 % scale & rotate
-savingSeg = 'C:/OPT_dataset/Annotation/%s%s';
-savingOri = 'C:/OPT_dataset/Image/%s%s';
+savingSeg = '/home/wenqili/Desktop/auntie/OPT_dataset/Annotation/%s%s';
+savingOri = '/home/wenqili/Desktop/auntie/OPT_dataset/Image/%s%s';
 for i = 1:size(xml_filenames, 1)
     
     rec = VOCreadxml([xml_set, xml_filenames(i).name]);
@@ -65,7 +65,7 @@ for i = 1:size(xml_filenames, 1)
             % load original image
             oriFile = sprintf(image_str,...
                 desc.dataset, desc.type, name, name, part);
-            oriFile = load_nii([oriFile '/Stack']);
+            oriFile = load_nii([oriFile '/Stack_1024x1024']);
             oriImg = uint8(oriFile.img);
             %oriImg = uint8(oriImg);
             clear oriFile;
