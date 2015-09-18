@@ -14,7 +14,8 @@ fprintf('%d xml files\n', length(xml_filenames));
 annotation_str = '/home/wenqili/Desktop/auntie/OPTannotation/%s/Annotated/%s/%s%s';
 % ../dataset/Images/type/index/index_block/
 %image_str = 'F:/OPT_original/%s/Images/%s/%s/%s%s';
-image_str = '/home/wenqili/Desktop/auntie/OPTannotation/%s/Images/%s/%s/%s%s';
+%image_str = '/home/wenqili/Desktop/auntie/OPTannotation/%s/Images/%s/%s/%s%s';
+image_str = '/home/wenqili/textures/OPT_stacks/%s/Images/%s/%s/%s%s';
 
 for i = 1:size(xml_filenames, 1)
     rec = VOCreadxml([xml_set, xml_filenames(i).name]);

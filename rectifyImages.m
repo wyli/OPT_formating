@@ -11,7 +11,8 @@ fprintf('%d xml files\n', length(xml_filenames));
 % ../dataset/Annotated/type/index_block/
 annotation_str = '/home/wenqili/Desktop/auntie/OPTannotation/%s/Annotated/%s/%s%s';
 % ../dataset/Images/type/index/index_block/
-image_str = '/home/wenqili/Desktop/auntie/OPTannotation/%s/Images/%s/%s/%s%s';
+%image_str = '/home/wenqili/Desktop/auntie/OPTannotation/%s/Images/%s/%s/%s%s';
+image_str = '/home/wenqili/textures/OPT_stacks/%s/Images/%s/%s/%s%s';
 
 % scale & rotate
 savingSeg = '/home/wenqili/Desktop/auntie/OPT_dataset/Annotation/%s%s';
