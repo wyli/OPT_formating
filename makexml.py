@@ -18,8 +18,8 @@ with open('checklist') as f:
             image_index = ET.SubElement(root, "index")
 
             image_dataset.text = entry[0] # OPTdataI/II/III/IV
-            image_type.text = entry[1] # Cancer/HGD/LGD
-            currentID = entry[2][0:3] # [0-9]{3} index of polyp
+            image_type.text = entry[1]    # Cancer/HGD/LGD
+            currentID = entry[2][0:3]     # [0-9]{3} index of polyp
             image_index.text = currentID 
 
         itemcount = itemcount + 1

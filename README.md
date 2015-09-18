@@ -12,7 +12,8 @@ Using matlab with NIFTI toolbox, converting files into consistent formats.
 ##### note:
 
 First make sure NIFTI in on matlab path and the file `load_nii_img.m` should be fixed.   
-Some image blocks have no corresponding annotations.   
+Some image blocks have no corresponding annotations.  
+notice file path delimiter
 dataset file (Image) path format:   
 
 `[DatasetIndex]/Images/[Type]/[ImageIndex]/[ImageBlockIndex]/*.bmp`   
@@ -34,3 +35,4 @@ Output structures:
 
 447C removed (size not consistent).   
 193A removed (not scaled).   
+476C not consistent frames, removed
