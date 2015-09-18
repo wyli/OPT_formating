@@ -10,6 +10,7 @@ Using matlab with NIFTI toolbox, converting files into consistent formats.
 
 - - -
 ##### note:
+Ensure at least 180GB space in total (input folder and output folder)
 
 First make sure NIFTI in on matlab path and the file `load_nii_img.m` should be fixed.   
 Some image blocks have no corresponding annotations.  
