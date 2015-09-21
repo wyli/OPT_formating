@@ -1,6 +1,6 @@
 addpath(genpath('/home/wenqili/textures/github/OPTAnalyse/NIFTI_20110921'));
-diary('/home/wenqili/Desktop/auntie/OPT_dataset/OPT.log');
 xml_set = '/home/wenqili/Desktop/auntie/OPT_dataset/desc/';
+diary('/home/wenqili/Desktop/auntie/OPT_dataset/OPT.log');
 fprintf('check existence\n');
 touchImages(xml_set); % check existence of images and annotations
 fprintf('check rotations\n');
